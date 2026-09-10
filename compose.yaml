@@ -1,0 +1,10 @@
+services:
+  backend:
+    build: ./crud-api
+    ports:
+      - "8000:80"
+
+  frontend:
+    build: ./crud-frontend-axios
+    ports:
+      - "8080:80"
