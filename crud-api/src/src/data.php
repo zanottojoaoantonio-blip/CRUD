@@ -31,7 +31,6 @@ function insertUser(array $user): array
 
     $id = $data['nextId'] ?? 1;
     $data['nextId'] = $id + 1;
-
     $user['id'] = $id;
     $data['users'][] = $user;
 
